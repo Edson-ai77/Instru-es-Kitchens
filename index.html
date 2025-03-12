@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instruções de Acesso e Treinamento</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+            margin-bottom: 20px;
+        }
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+        }
+        .topic-selector {
+            flex: 1;
+            margin-right: 15px;
+        }
+        #topicSelect {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: white;
+        }
+        .search-container {
+            flex: 1;
+            display: flex;
+        }
+        #search {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px 0 0 4px;
+        }
+        #searchBtn {
+            padding: 10px 15px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+        #searchBtn:hover {
+            background-color: #2980b9;
+        }
+        .content {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 20px;
+            margin-top: 20px;
+            background-color: white;
+        }
+        .section {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .section h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #ecf0f1;
+            border-left: 5px solid #3498db;
+        }
+        .section h3 {
+            color: #3498db;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .highlight {
+            background-color: #ffeb3b;
+            padding: 2px;
+            border-radius: 3px;
+        }
+        .steps {
+            margin-left: 20px;
+        }
+        .steps li {
+            margin-bottom: 10px;
+        }
+        .subsection {
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 3px solid #3498db;
+        }
+        .subsection h3 {
+            color: #2980b9;
+            margin-bottom: 10px;
+            border-bottom: none;
+        }
+        strong {
+            color: #e74c3c;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            text-align: right;
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        @media print {
+            .navigation {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Instruções para Acesso Remoto e Treinamento</h1>
+    </header>
+    
+    <div class="container">
+        <div class="navigation">
+            <div class="topic-selector">
+                <select id="topicSelect">
+                    <option value="">Selecione um tópico</option>
+                    <option value="preparativos">Preparativos para o Treinamento</option>
+                    <option value="skype">Contato via Skype</option>
+                    <option value="vpn">Instalação da VPN</option>
+                    <option value="vnc">Acesso Remoto via Tight VNC</option>
+                    <option value="planilha">Orientações para Planilha de Horas</option>
+                </select>
+            </div>
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Pesquisar instruções...">
+                <button id="searchBtn">Buscar</button>
+            </div>
+        </div>
+        
+        <div class="content" id="content">
+            <div class="section" id="preparativos">
+                <h2>PREPARATIVOS PARA O TREINAMENTO</h2>
+                <ul>
+                    <li><strong>Início:</strong> 24/02/2025, às 08:00 AM</li>
+                    <li><strong>Duração:</strong> Duas semanas</li>
+                    <li><strong>Local:</strong> Espaço tranquilo, com foco e concentração</li>
+                    <li><strong>Equipamentos necessários:</strong> Fone de ouvido e câmera</li>
+                </ul>
+            </div>
+            
+            <div class="section" id="skype">
+                <h2>CONTATO VIA SKYPE</h2>
+                <p>Acesse o link e envie uma mensagem para receber o arquivo de configuração:</p>
+                <p><a href="#" id="skypeLink">Acessar Skype</a></p>
+            </div>
+            
+            <div class="section" id="vpn">
+                <h2>INSTALAÇÃO DA VPN (Shrew Soft VPN)</h2>
+                
+                <h3>Passo 1: Baixar e instalar o VPN</h3>
+                <ul class="steps">
+                    <li>Baixe o arquivo: <strong>vpn-client-2.2.2-release.exe</strong>.</li>
+                    <li>Execute o instalador e siga as etapas:
+                        <ul>
+                            <li>Clique em Next.</li>
+                            <li>Selecione Standard Edition e clique em Next.</li>
+                            <li>Aceite o contrato (I Agree).</li>
+                            <li>Clique em Next até finalizar a instalação.</li>
+                            <li>Clique em Finish.</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <h3>Passo 2: Configurar e conectar à VPN</h3>
+                <ul class="steps">
+                    <li>Abra o VPN Access Manager.</li>
+                    <li>Importe o arquivo de configuração:
+                        <ul>
+                            <li>Clique em File > Import e selecione Kitchens_FariaLima.vpn.</li>
+                        </ul>
+                    </li>
+                    <li>Conecte-se à VPN:
+                        <ul>
+                            <li>Abra o VPN Access Manager.</li>
+                            <li>Clique duas vezes em Kitchens_FariaLima.vpn.</li>
+                            <li>Insira suas credenciais:
+                                <ul>
+                                    <li>Usuário: <strong>740054</strong></li>
+                                    <li>Senha: <strong>123@Mudar</strong></li>
+                                </ul>
+                            </li>
+                            <li>Clique em Connect. Se bem-sucedido, aparecerá "tunnel enabled".</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="section" id="vnc">
+                <h2>ACESSO REMOTO VIA TIGHT VNC</h2>
+                
+                <h3>Passo 1: Instalar o Tight VNC</h3>
+                <ul class="steps">
+                    <li>Baixe e instale o Tight VNC, conforme a versão do seu sistema (32 ou 64 bits).</li>
+                </ul>
+                
+                <h3>Passo 2: Conectar ao computador remoto</h3>
+                <ul class="steps">
+                    <li>Abra o Tight VNC.</li>
+                    <li>Informe o IP do computador:
+                        <ul>
+                            <li>De 24/02 a 03/03: <strong>192.168.192.243</strong></li>
+                            <li>Após 03/03: <strong>192.168.192.45</strong></li>
+                        </ul>
+                    </li>
+                    <li>Digite a senha de acesso:
+                        <ul>
+                            <li>Senha: <strong>ktc</strong></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <p>Caso tenha dúvidas, entre em contato pelo Skype.</p>
+            </div>
+            
+            <div class="section" id="planilha">
+                <h2>📌 ORIENTAÇÕES PARA USO DA PLANILHA DE HORAS</h2>
+                
+                <div class="subsection">
+                    <h3>1. ⚠️ PREENCHIMENTO MANUAL</h3>
+                    <ul>
+                        <li>Evite copiar e colar textos.</li>
+                        <li>Preencha todos os campos manualmente para garantir a correta aplicação das fórmulas.</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>2. ➕ INSERÇÃO DE NOVAS LINHAS</h3>
+                    <ul>
+                        <li>Sempre adicione linhas abaixo de uma já formatada, conforme o manual de treinamento.</li>
+                        <li>Copie a formatação da célula superior para as novas células.
+                            <ul>
+                                <li>Atenção: Se essa etapa for ignorada, a contagem de horas pode não ser atualizada corretamente.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>3. 🏠 QUANTIDADE DE AMBIENTES</h3>
+                    <ul>
+                        <li>Ambientes não finalizados (que continuam no dia seguinte) devem ser registrados com "0" (zero).</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>4. 📊 DADOS PARA PROJETOS</h3>
+                    <ul>
+                        <li>Utilize o número do pedido (não o número do dossiê) nos seguintes documentos:
+                            <ul>
+                                <li>Pré-executivo;</li>
+                                <li>Executivo;</li>
+                                <li>Planilha.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>5. 🔗 LINKS E ANEXOS</h3>
+                    <ul>
+                        <li>Planilha de Horas: <a href="#" id="planilhaLink">Acessar aqui</a>.</li>
+                        <li>PDF do Treinamento: Consulte o anexo original ("Comunicado Planilha de Horas").</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>6. ✅ CONFIRMAÇÃO DE RECEBIMENTO</h3>
+                    <ul>
+                        <li>Júnior Silvestre confirmou o recebimento das orientações em 24/02/2025.</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>📖 REFERÊNCIA</h3>
+                    <p>IFÁ, Gisele. Comunicado Planilha de Horas. E-mail enviado para Junior Silvestre et al., 24 fev. 2025. Disponível em: Caixa de entrada Gmail. Acesso em: [inserir data].</p>
+                </div>
+            </div>
+            
+            <div class="footer">
+                By Edson Rangel
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('search');
+            const searchBtn = document.getElementById('searchBtn');
+            const topicSelect = document.getElementById('topicSelect');
+            const content = document.getElementById('content');
+            const originalContent = content.innerHTML;
+            
+            // Search functionality
+            function performSearch() {
+                const searchTerm = searchInput.value.trim().toLowerCase();
+                
+                if (searchTerm === '') {
+                    // Restore original content without highlights
+                    content.innerHTML = originalContent;
+                    return;
+                }
+                
+                // Clone the original content
+                let newContent = originalContent;
+                
+                // Highlight the search term
+                if (searchTerm.length > 0) {
+                    const regex = new RegExp(`(${searchTerm})`, 'gi');
+                    newContent = newContent.replace(regex, '<span class="highlight">$1</span>');
+                }
+                
+                content.innerHTML = newContent;
+                
+                // Scroll to the first occurrence of the search term
+                const firstHighlight = document.querySelector('.highlight');
+                if (firstHighlight) {
+                    firstHighlight.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'center'
+                    });
+                }
+            }
+            
+            searchBtn.addEventListener('click', performSearch);
+            searchInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    performSearch();
+                }
+            });
+            
+            // Topic selection functionality
+            topicSelect.addEventListener('change', function() {
+                const selectedTopic = this.value;
+                
+                if (selectedTopic === '') {
+                    // Show all sections
+                    document.querySelectorAll('.section').forEach(section => {
+                        section.style.display = 'block';
+                    });
+                    return;
+                }
+                
+                // Hide all sections
+                document.querySelectorAll('.section').forEach(section => {
+                    section.style.display = 'none';
+                });
+                
+                // Show only the selected section
+                const selectedSection = document.getElementById(selectedTopic);
+                if (selectedSection) {
+                    selectedSection.style.display = 'block';
+                    selectedSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+            
+            // Make sections collapsible for better navigation
+            const sectionHeadings = document.querySelectorAll('.section h2');
+            sectionHeadings.forEach(heading => {
+                heading.style.cursor = 'pointer';
+                heading.addEventListener('click', function() {
+                    const section = this.parentElement;
+                    const content = Array.from(section.children).filter(el => el !== this);
+                    
+                    content.forEach(el => {
+                        el.style.display = el.style.display === 'none' ? 'block' : 'none';
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
